@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import Home from './Home';
 import {ControlledForm,UncontrolledForm} from './Form';
+import Calculator from './LiftingState';
 function App() {
   return (
     <div className="App">
@@ -9,6 +10,7 @@ function App() {
           <Home />
           <ControlledForm />
           <UncontrolledForm />
+          <Calculator />
       </div>
     </div>
   );
