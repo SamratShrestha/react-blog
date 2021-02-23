@@ -74,8 +74,8 @@ class Calculator extends Component{
         const fahrenheit = scale==='c'?tryConvert(temperature,toFahrenheit):temperature;
         return(
             <div>
-                <TemperatureInput temperature={celsius} onTemperatureChange={this.handleCelsiusChange}/>
-                <TemperatureInput temperature={fahrenheit} onTemperatureChange={this.handleFahrenheitChange} />
+                <TemperatureInput scale="c" temperature={celsius} onTemperatureChange={this.handleCelsiusChange}/>
+                <TemperatureInput scale="f" temperature={fahrenheit} onTemperatureChange={this.handleFahrenheitChange} />
             </div>
         )
     }
